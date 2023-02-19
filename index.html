@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>LABORATORIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class = "cont">
+
+        <h1>Create Account</h1>
+        <form id="form" class="form">
+
+            <!-- Grupo Nombre -->
+            <div class="field" id="field_name">
+                <label for="name" class="form_label">Nombre</label>
+                <input type="text" id="name" name="name" class="form_input" placeholder="">
+                <p class="input_error">Debe tener mínimo dos letras y sólo puede contener letras</p>
+                <p class="input_error_general">Rellene este campo</p>
+            </div>
+
+            <!-- Grupo Email -->
+            <div class="field" id="field_email">
+                <label for="email" class="form_label">Email</label>
+                <input type="email" id="email" name="email" class="form_input" placeholder="">
+                <p class="input_error">Email inválido</p>
+                <p class="input_error_general">Rellene este campo</p>
+            </div>
+
+            <!-- Grupo Pass 1 -->
+            <div class="field" id="field_pass1">
+                <label for="pass_1" class="form_label">Clave</label>
+                <input type="password" id="pass_1" name="pass_1" class="form_input" placeholder="">
+                <p class="input_error">Debe contener entre 8 y 15 carácteres, mayúsculas y minúsculas.</p>
+                <p class="input_error_general">Rellene este campo</p>
+            </div>
+
+            <!-- Grupo Pass 2 -->
+            <div class="field" id="field_pass2">
+                <label for="pass_2" class="form_label">Confirme su clave</label>
+                <input type="password" id="pass_2" name="pass_2" class="form_input" placeholder="">
+                <p class="input_error">Las contraseñas no coinciden</p>
+                <p class="input_error_general">Rellene este campo</p>
+            </div>
+
+            <input type="submit" class="submit" id="btn" value="enviar">
+        </form>
+    </div>
+
+</body>
+
+<script src="index.js"></script>
+</html>
